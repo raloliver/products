@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.deep_purple-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header dl-layout__header--scroll mdl-color--primary">
+    <div class="mdl-layout__header-row">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h1 class="mdl-layout-title">leadlovers</h1>
+        </div>
+      <div class="mdl-layout-spacer"></div>
+      <div id="notifications" class="material-icons mdl-badge mdl-badge--overlap" data-badge="4">
+        notifications_none
+      </div>
+      <a class="mdl-navigation__link" href="">
+        <button id="settings" class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">settings</i>
+          <div class="mdl-tooltip" for="settings">Configurações</div>
+        </button>
+      </a>
+    </div>
+    <div class="mdl-layout__header-row mdl-color--grey-100 mdl-color--indigo ml-header relative clear">
+      <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+          <label class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" for="search-expandable">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input  mdl-color-text--primary" type="text" id="search-expandable" />
+            <label class="mdl-textfield__label" for="search-expandable">Digite aqui para filtrar</label>
+          </div>
+        </div>
+        <a class="mdl-navigation__link" href="">
+          <button id="school" class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--grey-900">
+            <i class="material-icons">school</i>
+            <div class="mdl-tooltip" for="school">Meus Cursos</div>
+          </button>
+        </a>
+        <a class="mdl-navigation__link" href="">
+          <button id="people" class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--grey-900">
+            <i class="material-icons">people</i>
+            <div class="mdl-tooltip" for="people">Meus Clientes</div>
+          </button>
+        </a>
+        <a class="mdl-navigation__link" href="">
+          <button id="view_list" class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--grey-900">
+            <i class="material-icons">view_list</i>
+            <div class="mdl-tooltip" for="view_list">Mudar Exibição</div>
+          </button>
+        </a>
+        <a class="mdl-navigation__link" href="">
+          <button id="help" class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--grey-900">
+            <i class="material-icons">help</i>
+            <div class="mdl-tooltip" for="help">Ajuda</div>
+          </button>
+        </a>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu Principal</span>
+    <ul class="mdl-list">
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">dashboard</i>
+        Dashboard
+    </span>
+      </li>
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">pages</i>
+        Máquinas
+      </span>
+      </li>
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">account_box</i>
+        Meus Leads
+      </span>
+      </li>
+    </ul>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--3-col"></div>
+      <div class="mdl-cell mdl-cell--9-col mdl-cell--3-col-tablet">
+          <div class="mdl-card mdl-shadow--2dp">
+              <ul class="mdl-list no-padding mdl-card__title-icon no-margin">
+                <li class="mdl-list__item mdl-list__item--two-line">
+                  <span class="mdl-list__item-primary-content">
+                    <span>leadlovers</span>
+                    <span class="mdl-list__item-sub-title">Diego Carmona</span>
+                  </span>
+                </li>
+              </ul>              
+              <div class="mdl-card__media" style="background: url('https://placekitten.com/g/330/330') center/cover; height: 300px;">
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">people_outline</i></button>
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">remove_red_eye</i></button>
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">favorite_border</i></button>                    
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">thumb_up_border</i></button>
+              </div>
+              <div class="mdl-card__menu">
+                <button id="more_vert" class="mdl-button mdl-js-button mdl-button--ico">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-list mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                    for="more_vert">
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">attach_money</i>
+                      Integração
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">filter_list</i>
+                      Relacionamento
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">people_outline</i>
+                      Clientes
+                      </span>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
