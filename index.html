@@ -23,12 +23,70 @@
       <div id="notifications" class="material-icons mdl-badge mdl-badge--overlap" data-badge="4">
         notifications_none
       </div>
-      <a class="mdl-navigation__link" href="">
+      <ul class="mdl-menu mdl-list mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right mdl-shadow--2dp notifications-dropdown"
+        for="notifications">
+        <li class="mdl-list__item">
+            Você tem 4 novas notificações
+        </li>
+        <li class="mdl-menu__item mdl-list__item list__item--border-top">
+            <span class="mdl-list__item-primary-content">
+                <span class="mdl-list__item-avatar mdl-color--green-A200">
+                    <i class="material-icons">attach_money</i>
+                </span>
+                <span>3 novas vendas realizadas.</span>
+            </span>
+            <span class="mdl-list__item-secondary-content">
+              <span class="label">agora mesmo</span>
+            </span>
+        </li>
+        <li class="mdl-menu__item mdl-list__item list__item--border-top">
+            <span class="mdl-list__item-primary-content">
+                <span class="mdl-list__item-avatar mdl-color--red-A200">
+                    <i class="material-icons">error_outline</i>
+                </span>
+              <span>Broadcast sendo enviado.</span>
+            </span>
+            <span class="mdl-list__item-secondary-content">
+              <span class="label">1 min</span>
+            </span>
+        </li>
+        <li class="mdl-menu__item mdl-list__item list__item--border-top">
+            <span class="mdl-list__item-primary-content">
+                <span class="mdl-list__item-avatar">
+                    <i class="material-icons">mail_outline</i>
+                </span>
+              <span>Você têm 23 novos leads.</span>
+            </span>
+            <span class="mdl-list__item-secondary-content">
+              <span class="label">5 dias</span>
+            </span>
+        </li>
+        <li class="mdl-list__item list__item--border-top">
+            <button href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">VER TODAS</button>
+        </li>
+    </ul>
+      <a class="mdl-navigation__link" href="#settings">
         <button id="settings" class="mdl-button mdl-js-button mdl-button--icon">
           <i class="material-icons">settings</i>
           <div class="mdl-tooltip" for="settings">Configurações</div>
         </button>
       </a>
+      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-shadow--2dp settings-dropdown"
+          for="settings">
+          <li class="mdl-menu__item">
+              Configurações
+          </li>
+          <a class="mdl-menu__item">
+              Abrir Ticket
+          </a>
+          <li class="mdl-menu__item">
+              Manual
+          </li>
+      </ul>
+      <div class="avatar-dropdown" id="avatar">
+          <img src="http://cdn0.trampos.co/candidate_profiles/avatars/168390/ba3041b28ab39ca86609ec66198a164fc2dab383/medium/israel0.png" width="50px">
+          <div class="mdl-tooltip" for="avatar">Israel Oliveira</div>
+      </div>
     </div>
     <div class="mdl-layout__header-row mdl-color--grey-100 mdl-color--indigo ml-header relative clear">
       <div class="mdl-layout-spacer"></div>
@@ -92,7 +150,67 @@
   </div>
   <main class="mdl-layout__content">
     <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--3-col"></div>
+      <div class="mdl-cell mdl-cell--3-col">
+        <aside>
+            <ul class="mdl-list no-padding no-margin mdl-color--grey-900">
+                <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button">
+                  <span class="mdl-list__item-primary-content">
+                    Categorias
+                  </span>
+                  <span class="mdl-list__item-secondary-action">
+                      <i id="catDefault" class="material-icons">keyboard_arrow_right</i>
+                      <!--<ul class="mdl-menu mdl-list mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="catEdit">
+                        <li class="mdl-list__item">
+                          <span class="mdl-list__item-primary-content">
+                            <i class="material-icons mdl-list__item-icon">attach_money</i>
+                          Integração
+                          </span>
+                        </li>
+                        <li class="mdl-list__item">
+                          <span class="mdl-list__item-primary-content">
+                            <i class="material-icons mdl-list__item-icon">filter_list</i>
+                          Relacionamento
+                          </span>
+                        </li>
+                        <li class="mdl-list__item">
+                          <span class="mdl-list__item-primary-content">
+                            <i class="material-icons mdl-list__item-icon">people_outline</i>
+                          Clientes
+                          </span>
+                        </li>
+                      </ul>-->
+                  </span>
+                </li>
+                <div class="mdl-menu mdl-list mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="catDefault"> 
+                  <div class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <span>Todos</span>
+                    </span>
+                    <span class="mdl-list__item-secondary-action">2</span>
+                  </div>
+                </div>
+            </ul>  
+            <ul class="mdl-list no-padding no-margin mdl-color--grey-800">
+                <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button">
+                  <span class="mdl-list__item-primary-content">
+                    Todas
+                  </span>
+                  <span class="mdl-list__item-secondary-content">
+                      2
+                 </span>
+                </li>
+                <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button">
+                  <span class="mdl-list__item-primary-content">
+                    Cursos Grátis
+                  </span>
+                  <span class="mdl-list__item-secondary-content">
+                      4
+                 </span>
+                </li>
+            </ul>          
+        </aside>
+      </div>
       <div class="mdl-cell mdl-cell--9-col mdl-cell--3-col-tablet">
           <div class="mdl-card mdl-shadow--2dp">
               <ul class="mdl-list no-padding mdl-card__title-icon no-margin">
@@ -112,11 +230,11 @@
                 <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">thumb_up_border</i></button>
               </div>
               <div class="mdl-card__menu">
-                <button id="more_vert" class="mdl-button mdl-js-button mdl-button--ico">
+                <button id="product_edit" class="mdl-button mdl-js-button mdl-button--ico">
                   <i class="material-icons">more_vert</i>
                 </button>
                 <ul class="mdl-menu mdl-list mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-                    for="more_vert">
+                    for="product_edit">
                     <li class="mdl-list__item">
                       <span class="mdl-list__item-primary-content">
                         <i class="material-icons mdl-list__item-icon">attach_money</i>
