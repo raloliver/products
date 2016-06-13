@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Produtos</title>
+    <title>leadlovers - Meus Produtos</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -16,6 +16,7 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header dl-layout__header--scroll mdl-color--primary">
     <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
           <h1 class="mdl-layout-title">leadlovers</h1>
         </div>
@@ -65,28 +66,79 @@
             <button href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">VER TODAS</button>
         </li>
     </ul>
-      <a class="mdl-navigation__link" href="#settings">
-        <button id="settings" class="mdl-button mdl-js-button mdl-button--icon">
+    <div class="material-icons mdl-badge mdl-badge--overlap">
+      <a class="mdl-navigation__link">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="settings">
           <i class="material-icons">settings</i>
-          <div class="mdl-tooltip" for="settings">Configurações</div>
         </button>
       </a>
-      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-shadow--2dp settings-dropdown"
+      <ul class="mdl-menu mdl-list mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right mdl-shadow--2dp settings-dropdown"
           for="settings">
-          <li class="mdl-menu__item">
-              Configurações
+          <li class="mdl-menu__item mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-icon">work</i>
+                  Plano e Conta
+              </span>
           </li>
-          <a class="mdl-menu__item">
-              Abrir Ticket
-          </a>
-          <li class="mdl-menu__item">
-              Manual
+          <li class="mdl-menu__item mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-icon">translate</i>
+                  Idioma
+              </span>  
+          </li>
+          <li class="mdl-menu__item mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-icon">av_timer</i>
+                  TimeZone
+              </span>
+          </li>
+          <li class="mdl-menu__item mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-icon">mood</i>
+                  Programa de Afiliado
+              </span>
           </li>
       </ul>
-      <div class="avatar-dropdown" id="avatar">
-          <img src="http://cdn0.trampos.co/candidate_profiles/avatars/168390/ba3041b28ab39ca86609ec66198a164fc2dab383/medium/israel0.png" width="50px">
-          <div class="mdl-tooltip" for="avatar">Israel Oliveira</div>
+    </div>
+      <div class="avatar-dropdown" id="avatar">                   
+          <div class="polygon-each-img-wrap">
+            <img src="http://lorempixel.com/150/150/people/1/" alt="demo-clip-heptagon" class="hexagon">
+            <svg class="clip-svg">
+            <defs>
+              <clipPath id="hexagon" clipPathUnits="objectBoundingBox">
+                <polygon points="0.5 0, 1 0.25, 1 0.75, 0.5 1, 0 0.75, 0 0.25" />
+              </clipPath>
+            </defs>
+          </svg> 
+          </div>          
       </div>
+      <ul class="mdl-menu mdl-list mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-shadow--2dp account-dropdown"
+          for="avatar">
+          <li class="mdl-menu__item mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-icon">account_circle</i>
+                  Alterar Perfil
+              </span>
+          </li>
+          <li class="mdl-menu__item mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-icon">share</i>
+                  Contas Conectadas
+              </span>             
+          </li>
+          <li class="mdl-menu__item mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-icon">group_work</i>
+                  Conteúdo Compartilhado
+              </span>
+          </li>
+          <li class="mdl-menu__item mdl-list__item">
+              <span class="mdl-list__item-primary-content">
+                  <i class="material-icons mdl-list__item-icon text-color--secondary">exit_to_app</i>
+                  Sair
+              </span>
+          </li>
+      </ul>
     </div>
     <div class="mdl-layout__header-row mdl-color--grey-100 mdl-color--indigo ml-header relative clear">
       <div class="mdl-layout-spacer"></div>
@@ -152,46 +204,17 @@
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--3-col">
         <aside>
-            <ul class="mdl-list no-padding no-margin mdl-color--grey-900">
-                <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button">
+            <ul class="mdl-list mdl-color--grey-900 no-margin-bottom no-padding">
+                <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button no-margin">
                   <span class="mdl-list__item-primary-content">
                     Categorias
                   </span>
                   <span class="mdl-list__item-secondary-action">
-                      <i id="catDefault" class="material-icons">keyboard_arrow_right</i>
-                      <!--<ul class="mdl-menu mdl-list mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-                        for="catEdit">
-                        <li class="mdl-list__item">
-                          <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-icon">attach_money</i>
-                          Integração
-                          </span>
-                        </li>
-                        <li class="mdl-list__item">
-                          <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-icon">filter_list</i>
-                          Relacionamento
-                          </span>
-                        </li>
-                        <li class="mdl-list__item">
-                          <span class="mdl-list__item-primary-content">
-                            <i class="material-icons mdl-list__item-icon">people_outline</i>
-                          Clientes
-                          </span>
-                        </li>
-                      </ul>-->
+                      <i class="material-icons">keyboard_arrow_right</i>
                   </span>
                 </li>
-                <div class="mdl-menu mdl-list mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="catDefault"> 
-                  <div class="mdl-list__item">
-                    <span class="mdl-list__item-primary-content">
-                      <span>Todos</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-action">2</span>
-                  </div>
-                </div>
             </ul>  
-            <ul class="mdl-list no-padding no-margin mdl-color--grey-800">
+            <ul class="mdl-list mdl-color--grey-800 no-margin-top no-padding">
                 <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button">
                   <span class="mdl-list__item-primary-content">
                     Todas
@@ -208,11 +231,14 @@
                       4
                  </span>
                 </li>
-            </ul>          
+            </ul>
+            <div class="mdl-layout-spacer"></div>
+            <!--secondary-menu-->
         </aside>
       </div>
-      <div class="mdl-cell mdl-cell--9-col mdl-cell--3-col-tablet">
-          <div class="mdl-card mdl-shadow--2dp">
+      <div class="mdl-cell mdl-cell--9-col">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-card mdl-shadow--2dp">
               <ul class="mdl-list no-padding mdl-card__title-icon no-margin">
                 <li class="mdl-list__item mdl-list__item--two-line">
                   <span class="mdl-list__item-primary-content">
@@ -256,6 +282,139 @@
                 </ul>
               </div>
           </div>
+          <div class="mdl-cell mdl-card mdl-shadow--2dp">
+              <ul class="mdl-list no-padding mdl-card__title-icon no-margin">
+                <li class="mdl-list__item mdl-list__item--two-line">
+                  <span class="mdl-list__item-primary-content">
+                    <span>Área de Membros</span>
+                    <span class="mdl-list__item-sub-title">Israel Oliveira</span>
+                  </span>
+                </li>
+              </ul>              
+              <div class="mdl-card__media" style="background: url('http://lorempixel.com/350/330/animals/3/') center/cover; height: 300px;">
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">people_outline</i></button>
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">remove_red_eye</i></button>
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">favorite_border</i></button>                    
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">thumb_up_border</i></button>
+              </div>
+              <div class="mdl-card__menu">
+                <button id="product_edit2" class="mdl-button mdl-js-button mdl-button--ico">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-list mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                    for="product_edit2">
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">attach_money</i>
+                      Integração
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">filter_list</i>
+                      Relacionamento
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">people_outline</i>
+                      Clientes
+                      </span>
+                    </li>
+                </ul>
+              </div>
+          </div>
+          <div class="mdl-cell mdl-card mdl-shadow--2dp">
+              <ul class="mdl-list no-padding mdl-card__title-icon no-margin">
+                <li class="mdl-list__item mdl-list__item--two-line">
+                  <span class="mdl-list__item-primary-content">
+                    <span>Afiliados</span>
+                    <span class="mdl-list__item-sub-title">Anderson Costa</span>
+                  </span>
+                </li>
+              </ul>              
+              <div class="mdl-card__media" style="background: url('http://lorempixel.com/350/330/animals/7/') center/cover; height: 300px;">
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">people_outline</i></button>
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">remove_red_eye</i></button>
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">favorite_border</i></button>                    
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">thumb_up_border</i></button>
+              </div>
+              <div class="mdl-card__menu">
+                <button id="product_edit3" class="mdl-button mdl-js-button mdl-button--ico">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-list mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                    for="product_edit3">
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">attach_money</i>
+                      Integração
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">filter_list</i>
+                      Relacionamento
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">people_outline</i>
+                      Clientes
+                      </span>
+                    </li>
+                </ul>
+              </div>
+          </div>
+          <div class="mdl-cell mdl-card mdl-shadow--2dp">
+              <ul class="mdl-list no-padding mdl-card__title-icon no-margin">
+                <li class="mdl-list__item mdl-list__item--two-line">
+                  <span class="mdl-list__item-primary-content">
+                    <span>Remarketing no Facebook</span>
+                    <span class="mdl-list__item-sub-title">Camila Porto</span>
+                  </span>
+                </li>
+              </ul>              
+              <div class="mdl-card__media" style="background: url('http://lorempixel.com/350/330/animals/8/') center/cover; height: 300px;">
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">people_outline</i></button>
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">remove_red_eye</i></button>
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">favorite_border</i></button>                    
+                <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">thumb_up_border</i></button>
+              </div>
+              <div class="mdl-card__menu">
+                <button id="product_edit4" class="mdl-button mdl-js-button mdl-button--ico">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-list mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                    for="product_edit4">
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">attach_money</i>
+                      Integração
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">filter_list</i>
+                      Relacionamento
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">people_outline</i>
+                      Clientes
+                      </span>
+                    </li>
+                </ul>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
