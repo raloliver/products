@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" ng-app="leadlovers">
 <head>
     <meta charset="UTF-8">
     <title>leadlovers - Meus Produtos</title>
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.deep_purple-pink.min.css">
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -198,13 +199,19 @@
         Meus Leads
       </span>
       </li>
+      <li class="mdl-list__item">
+        <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">account_box</i>
+        Meus Aplicativos do Facebook
+      </span>
+      </li>
     </ul>
   </div>
   <main class="mdl-layout__content">
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--3-col">
-        <aside>
-            <ul class="mdl-list mdl-color--grey-900 no-margin-bottom no-padding">
+        <aside ng-controller="collapseToogle">
+            <ul class="mdl-list mdl-color--grey-900 no-margin-bottom no-padding" ng-show="collapseHide">
                 <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button no-margin">
                   <span class="mdl-list__item-primary-content">
                     Categorias
@@ -214,7 +221,7 @@
                   </span>
                 </li>
             </ul>  
-            <ul class="mdl-list mdl-color--grey-800 no-margin-top no-padding">
+            <ul class="mdl-list mdl-color--grey-800 no-margin-top no-padding" ng-hide="collapseShow">
                 <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button">
                   <span class="mdl-list__item-primary-content">
                     Todas

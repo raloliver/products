@@ -10,7 +10,6 @@ a:focus, button:focus, i:focus {outline: none;}
 #notifications {margin-top: 10px;}
 .settings-dropdown {width: auto; }
 .settings-dropdown .mdl-menu__item, .settings-dropdown a {font-family: "Roboto", "Helvetica", "Arial", sans-serif;font-size: 14px;font-weight: 100;}
-
 /*avatar-hexagon*/
 .clip-svg {width: 0; height: 0;}
 #avatar img {max-width: 100%; height: auto;}
@@ -21,5 +20,4 @@ a:focus, button:focus, i:focus {outline: none;}
     clip-path: url("#hexagon");
     width: 50px;
     max-width: 50px;
-}
-    
+}    
