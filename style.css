@@ -20,49 +20,9 @@ a:focus, button:focus, i:focus {outline: none;}
     clip-path: url("#hexagon");
     width: 50px;
     max-width: 50px;
-}    
-/*accoridon*/
-.clps__content{
-  display:inline-block;
-  width:100%;
-  position:relative
 }
-
-.clps__content.ng-hide-remove,
-.clps__content.ng-hide-add,
-.clps__content.ng-hide-add-active,
-.clps__content.ng-hide-remove-active {
-  transition: all .2s ease
-}
-
-.clps__content.ng-hide-add {
-  opacity: 1;
-  animation: .2s fadeOut
-}
-
-.clps__content.ng-hide-remove {
-  opacity: 1;
-  animation: .2s fadeInUp
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    bottom: -10px
-  }
-  100% {
-    opacity: 1;
-    bottom: 0
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-    bottom: 0
-  }
-  100% {
-    opacity: 0;
-    bottom: -10px
-  }
-}
+/*accordion*/
+aside ul .mdl-list__item {cursor: pointer;}
+aside ul .mdl-list__item i.material-icons:after {content: 'keyboard_arrow_down';}
+aside ul.active .mdl-list__item i.material-icons:after {content: 'keyboard_arrow_right';}
+aside .mdl-textfield__label:after {background-color: #f5f5f5 !important}
