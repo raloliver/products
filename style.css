@@ -21,3 +21,48 @@ a:focus, button:focus, i:focus {outline: none;}
     width: 50px;
     max-width: 50px;
 }    
+/*accoridon*/
+.clps__content{
+  display:inline-block;
+  width:100%;
+  position:relative
+}
+
+.clps__content.ng-hide-remove,
+.clps__content.ng-hide-add,
+.clps__content.ng-hide-add-active,
+.clps__content.ng-hide-remove-active {
+  transition: all .2s ease
+}
+
+.clps__content.ng-hide-add {
+  opacity: 1;
+  animation: .2s fadeOut
+}
+
+.clps__content.ng-hide-remove {
+  opacity: 1;
+  animation: .2s fadeInUp
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    bottom: -10px
+  }
+  100% {
+    opacity: 1;
+    bottom: 0
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    bottom: 0
+  }
+  100% {
+    opacity: 0;
+    bottom: -10px
+  }
+}
