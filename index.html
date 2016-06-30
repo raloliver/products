@@ -208,7 +208,17 @@
   <main class="mdl-layout__content">
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone">
-        <aside class="mdl-color--grey-800 mdl-layout__drawer is-visible">
+        <aside class="mdl-color--grey-800 mdl-layout__drawer is-visible mdl-aside">
+          <ul class="mdl-list no-margin" ng-class="{'active': expand}" toggleclass>
+              <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 no-margin">
+                <button id="keyboard_arrow_right" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                  <i class="material-icons">keyboard_arrow_right</i>
+                </button>
+                <div class="mdl-tooltip mdl-tooltip--right" for="keyboard_arrow_right">Adicionar Novo</div>
+              </li>
+          </ul>          
+        </aside>
+        <aside class="mdl-color--grey-800 mdl-layout__drawer is-visible mdl-aside__show" ng-show="expand">
           <ul class="mdl-list no-margin no-padding">
             <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 no-padding-top no-padding-bottom">
               <span class="mdl-list__item-primary-content">
@@ -223,11 +233,13 @@
                 </div>  
               </span>              
               <span class="mdl-list__item-secondary-action">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" ng-class="{'active': expand}" toggleclass>                
                   <i class="material-icons">keyboard_arrow_left</i>
+                </button>
               </span>
             </li>
           </ul>              
-            <ul class="mdl-list mdl-color--grey-900 no-margin no-padding" ng-class="{'active': expand}" toggleclass>
+            <ul class="mdl-list mdl-color--grey-900 no-margin no-padding">
                 <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button no-margin">
                   <span class="mdl-list__item-primary-content">
                     Categorias
@@ -237,7 +249,7 @@
                   </span>
                 </li>
             </ul>  
-            <ul class="mdl-list mdl-color--grey-800 no-margin no-padding" ng-hide="expand">
+            <ul class="mdl-list mdl-color--grey-800 no-margin no-padding">
                 <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button">
                   <span class="mdl-list__item-primary-content">
                     Todas
