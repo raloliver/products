@@ -207,18 +207,26 @@
   </div>
   <main class="mdl-layout__content">
     <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--2-col mdl-layout--large-screen-only">
-        <aside class="mdl-color--grey-800 mdl-layout__drawer mdl-layout__drawer-right is-visible">
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label no-margin-bottom">
-              <label class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--grey-100" for="aside-search">
-                <i class="material-icons">search</i>
-              </label>
-              <div class="mdl-textfield__expandable-holder mdl-color-text--grey-100">
-                <input class="mdl-textfield__input mdl-color-text--grey-100" type="text" id="aside-search" />
-                <label class="mdl-textfield__label mdl-color-text--grey-100" for="aside-search">Digite para filtrar...</label>                
-              </div>
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"><i class="material-icons mdl-color-text--grey-100">keyboard_arrow_right</i> </button>              
-            </div>    
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone">
+        <aside class="mdl-color--grey-800 mdl-layout__drawer is-visible">
+          <ul class="mdl-list no-margin no-padding">
+            <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 no-padding-top no-padding-bottom">
+              <span class="mdl-list__item-primary-content">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label no-margin-bottom">
+                  <label class="mdl-button mdl-js-button mdl-button--icon mdl-color-text--grey-100" for="aside-search">
+                    <i class="material-icons">search</i>
+                  </label>
+                  <div class="mdl-textfield__expandable-holder mdl-color-text--grey-100">
+                    <input class="mdl-textfield__input mdl-color-text--grey-100" type="text" id="aside-search" />
+                    <label class="mdl-textfield__label mdl-color-text--grey-100" for="aside-search">Digite para filtrar...</label>                
+                  </div>                                
+                </div>  
+              </span>              
+              <span class="mdl-list__item-secondary-action">
+                  <i class="material-icons">keyboard_arrow_left</i>
+              </span>
+            </li>
+          </ul>              
             <ul class="mdl-list mdl-color--grey-900 no-margin no-padding" ng-class="{'active': expand}" toggleclass>
                 <li class="mdl-navigation__link mdl-list__item mdl-color-text--grey-100 mdl-button no-margin">
                   <span class="mdl-list__item-primary-content">
@@ -254,7 +262,7 @@
         </aside>                        
       </div>
       <div class="mdl-cell mdl-cell--9-col">
-        <div class="mdl-grid page-content">
+        <div class="mdl-grid page-content">                  
           <div class="mdl-cell mdl-card mdl-shadow--2dp">
               <ul class="mdl-list no-padding mdl-card__title-icon no-margin">
                 <li class="mdl-list__item mdl-list__item--two-line">
@@ -264,7 +272,7 @@
                   </span>
                 </li>
               </ul>              
-              <div class="mdl-card__media" style="background: url('https://placekitten.com/g/330/330') center/cover; height: 300px;">
+              <div class="mdl-card__media" style="background: url('http://placekitten.com/g/330/330') center/cover; height: 300px;">
               </div>
               <div class="mdl-card__actions mdl-card--border">
                 <button class="mdl-button mdl-button--icon"><i class="material-icons mdl-color-text--grey-400">people_outline</i></button>
@@ -783,6 +791,29 @@
                 </ul>
               </div>
           </div>
+          <div class="mdl-card__menu mdl-fab-menu">
+            <button id="add_product" class="animated-fab-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                <i class="material-icons">add</i>
+            </button> 
+            <ul class="mdl-menu mdl-list mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect" 
+            for="add_product">
+              <li class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-color--grey-100">
+                  <i class="material-icons">school</i>
+                </button>                  
+              </li>
+              <li class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-color--grey-100">
+                  <i class="material-icons">layers</i>
+                </button>
+              </li>
+              <li class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-color--grey-100">
+                  <i class="material-icons">person_add</i>                  
+                </button>
+              </li>
+            </ul>
+          </div>        
         </div>
       </div>
     </div>
