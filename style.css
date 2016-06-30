@@ -26,8 +26,8 @@ a:focus, button:focus, i:focus {outline: none;}
 aside.mdl-aside {width: 60px;}
 aside.mdl-aside li {height: 50px;}
 aside.mdl-aside__show ul .mdl-list__item {cursor: pointer;}
-aside.mdl-aside__show [toggleclass] .mdl-list__item i.material-icons:after {content: 'keyboard_arrow_down';}
-aside.mdl-aside__show [toggleclass].active .mdl-list__item i.material-icons:after {content: 'keyboard_arrow_right'; padding-left: 10px;}
+aside.mdl-aside__show .mdl-list__item i.material-icons:after {content: 'keyboard_arrow_down';}
+aside.mdl-aside__show .mdl-list__item.active  i.material-icons:after {content: 'keyboard_arrow_right'; padding-left: 10px;}
 aside .mdl-textfield__label:after {background-color: #f5f5f5 !important}
 aside .mdl-mini-footer button {border: 1px solid white; margin: 0 auto;}
 /*fab button*/
